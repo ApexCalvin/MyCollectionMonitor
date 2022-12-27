@@ -1,0 +1,47 @@
+{
+  "applications": ["MyCollectionMonitor"],
+  "changelogDate": "20221227164231",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "item",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "releaseDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "releasePrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "purchaseDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "purchasePrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "marketPrice",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Item",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "collectionCategory",
+      "otherEntityRelationshipName": "item",
+      "relationshipName": "collectionCategory",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}
